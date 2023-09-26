@@ -15,8 +15,6 @@ define service {
 
 .NOTES
    Drop this script in the plugins directory on windows
-
-   Author: khurram.subhani@live.com
 #>
 
 param (
