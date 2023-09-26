@@ -4,13 +4,13 @@
 .DESCRIPTION
    This script will report back drive usage on a specific drive
 .EXAMPLE
-   command[check_drive]=/usr/lib/nagios/plugins/check_nrpe -H $HOSTADDRESS$ -c check_drive -a $ARG1$ $ARG2$ $ARG3$
+   command[check_windisk]=/usr/lib/nagios/plugins/check_nrpe -H $HOSTADDRESS$ -c check_windisk -a $ARG1$ $ARG2$ $ARG3$
 .EXAMPLE
 define service {
     use                     generic-service
     host_name               your_windows_host
     service_description     Check Drive Usage
-    check_command           check_nrpe!check_drive!C:!80!90
+    check_command           check_nrpe!check_windisk!C:!80!90
 }
 
 .NOTES
